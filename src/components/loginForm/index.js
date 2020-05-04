@@ -14,7 +14,7 @@ const LoginForm = ({ teddyController }) => {
       setStatus(undefined);
       teddyController("idle");
     }
-  }, login);
+  }, [login]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
