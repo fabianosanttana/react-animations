@@ -12,7 +12,7 @@ export const AppWrapper = styled.div`
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 20px;
-  max-width: 626px;
+  max-width: 700px;
   background: rgb(29, 30, 32);
 `;
 
@@ -124,4 +124,43 @@ export const Button = styled.button`
         animation: ${rotate} 1s cubic-bezier(0.54, 0.23, 0.57, 0.93) infinite;
       }
     `}
+`;
+
+export const Divider = styled.div`
+  flex: 6;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+`;
+
+export const FlexContainer = styled.div`
+  flex-direction: column;
+  display: flex;
+  flex-flow: nowrap;
+`;
+
+export const RangeInput = styled.input`
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 18em;
+  height: 0.5em;
+  position: relative;
+  left: 4em;
+  border-radius: 5px;
+  background-color: rgb(16, 16, 16);
+  outline: none;
+  cursor: pointer;
+
+  &::-webkit-slider-thumb {
+    all: unset;
+    -webkit-appearance: none;
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgb(0, 189, 165);
+    transition: 0.3s ease-in-out;
+  }
 `;
